@@ -130,7 +130,7 @@ body {
     width: 100%;
   }
   [class*='col-'] {
-    padding-right: 0px;
+    padding-right: 20px;
   }
 }
 
