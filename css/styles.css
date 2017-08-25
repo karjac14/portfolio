@@ -1,0 +1,179 @@
+/*style file for index.html*/
+
+
+
+
+/*global styling*/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  max-width: 1024px;
+  margin: 0px auto;
+  padding: 8px 12px;
+}
+
+
+/*common styling for all containers*/
+.container {
+  margin-bottom: 8px;
+}
+
+
+/*START styles for all name container*/
+.name-container {
+  border-bottom: 3px solid #7d97ad;
+}
+
+.name-container #header-logo {
+  float: left;
+  margin-top: 10px;
+  height: 75px;
+  width: 75px;
+}
+
+.name-container h1, .name-container h4 {
+  text-align: right;
+  letter-spacing: 2px;
+  font-family: 'Quicksand', sans-serif;
+}
+/*END styles for all name container*/
+
+
+/*START styles for all banner container*/
+.banner-container {
+  min-height: 300px;
+  background-size: cover;
+  padding-left: 15px;
+}
+/*END styles for all banner container*/
+
+
+/*START styles for all features container*/
+.features-container {
+  min-height: 50px;
+}
+
+.features-container h3 {
+  color: #7d97ad;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+
+.features-container .feature-item {
+  display: inline-block;
+  color: #2d3c49;
+}
+
+.feature-item .feature-img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.feature-item .feature-img:hover {
+  border: #7d97ad 8px solid;
+  margin-top: -6px;
+}
+
+.feature-item .feature-title {
+  font-size: 1.5em;
+  display: block;
+  text-align: center;
+}
+
+.feature-item .feature-subtitle {
+  font-size: 1em;
+  display: block;
+  text-align: center;
+}
+/*END styles for all banner container*/
+
+/*START styles for all grid system*/
+[class*='col-'] {
+  float: left;
+}
+
+.grid {
+  width: calc(100% + 20px);
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*END styles for all grid system*/
+
+/**** Media Queries *****/
+
+/* For mobile: */
+@media only screen and (min-width: 300px) {
+  .banner-container {
+    background-image: url("../img/banner-s.jpg");
+  }
+  .banner-container h3 {
+    padding-top: 110px;
+    text-align: left;
+    font-size: 1.5em;
+  }
+  .banner-container h6 {
+    text-align: left;
+    font-size: 1em;
+    margin-top: -10px;
+  }
+  .col-sm-1-1 {
+    width: 100%;
+  }
+  [class*='col-'] {
+    padding-right: 0px;
+  }
+}
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+
+  .banner-container {
+    background-image: url("../img/banner-m.jpg");
+  }
+  .banner-container h3 {
+    padding-top: 110px;
+    text-align: left;
+    font-size: 2em;
+  }
+  .banner-container h6 {
+    text-align: left;
+    font-size: 1.2em;
+    margin-top: -20px;
+  }
+  .col-md-1-3 {
+    width: 33.33%;
+  }
+  [class*='col-'] {
+    padding-right: 20px;
+  }
+}
+
+
+/* For desktop: */
+@media only screen and (min-width: 769px) {
+
+  .banner-container {
+    background-image: url("../img/banner-l.jpg");
+  }
+  .banner-container h3 {
+    padding-top: 110px;
+    text-align: left;
+    font-size: 2.5em;
+  }
+  .banner-container h6 {
+    text-align: left;
+    font-size: 1.5em;
+    margin-top: -20px;
+  }
+
+}
