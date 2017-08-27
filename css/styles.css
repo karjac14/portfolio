@@ -1,6 +1,8 @@
 /*style file for index.html*/
 
+
 /*global styling*/
+
 body {
   font-family: 'Roboto', sans-serif;
   max-width: 1024px;
@@ -9,15 +11,17 @@ body {
 
 
 /*START styles for all name container*/
+
 .name-container {
   border-bottom: 3px solid #7d97ad;
   margin-bottom: 15px;
   width: 100%;
-  height: 90px;
+  height: 100px;
 }
 
 .name-container #header-logo {
   float: left;
+  margin-top: 12px;
   height: 75px;
   width: 75px;
 }
@@ -27,22 +31,28 @@ body {
   letter-spacing: 2px;
   font-family: 'Quicksand', sans-serif;
 }
+
+
 /*END styles for all name container*/
 
 
 /*START styles for all banner container*/
+
 .banner-container {
   min-height: 300px;
   background-image: url("../img/banner-s.jpg");
   background-size: cover;
-  padding-left: 15px;
+  padding-left: 30px;
   margin-bottom: 8px;
   width: 100%;
 }
+
+
 /*END styles for all banner container*/
 
 
 /*START styles for all features container*/
+
 .features-container h3 {
   color: #7d97ad;
 }
@@ -68,28 +78,31 @@ body {
   display: block;
   text-align: center;
 }
+
+
 /*END styles for all banner container*/
 
 
-
 /**** Media Queries *****/
-/* For mobile: */
-@media only screen and (min-width: 300px) {
 
+
+/* For mobile: */
+
+@media only screen and (min-width: 300px) {
   .name-container h1, .name-container h4 {
     text-align: right;
     letter-spacing: 1px;
     font-family: 'Quicksand', sans-serif;
   }
-
   .banner-container h3 {
     padding-top: 110px;
   }
 }
 
-/* For tablets: */
-@media only screen and (min-width: 600px) {
 
+/* For tablets: */
+
+@media only screen and (min-width: 600px) {
   .banner-container {
     background-image: url("../img/banner-m.jpg");
   }
@@ -106,12 +119,11 @@ body {
 
 
 /* For desktop: */
-@media only screen and (min-width: 769px) {
 
+@media only screen and (min-width: 769px) {
   .banner-container {
     background-image: url("../img/banner-l.jpg");
   }
-
   .banner-container h3 {
     padding-top: 100px;
     text-align: left;
@@ -121,5 +133,4 @@ body {
     text-align: left;
     font-size: 1.5em;
   }
-
 }
