@@ -9,45 +9,52 @@
   <!-- Styles -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand%7CRoboto" rel="stylesheet">
 </head>
 
-<body class="container-fluid">
+<body>
   <!-- Header Content -->
   <header class="name-container container">
     <div class="row">
-      <img id="header-logo" src="img/logo-mark.svg" alt="Udacity Logo">
-      <h1>Karlo Eleuterio</h1>
-      <h4>Front-End Ninja</h4>
+      <div class="col-xs-12">
+        <img id="header-logo" src="img/logo-mark.svg" alt="Udacity Logo">
+        <h1>Karlo Eleuterio</h1>
+        <h4>Front-End Ninja</h4>
+        <hr class="hr-line">
+      </div>
     </div>
   </header>
 
+
   <!-- Banner Content -->
-  <main class="banner-container container">
-    <div class="row">
+  <main class="banner-container">
+    <div class="banner">
       <h3>Aspiring Full Stack Developer</h3>
       <h6>Javascript &#183; CSS &#183; Python &#183; SQL</h6>
     </div>
   </main>
 
   <!-- Features Content -->
-  <div class="features-container">
-    <h3 class="features-title">Featured Works</h3>
+  <div class="features-container container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3 class="features-title">Featured Works</h3>
+      </div>
+    </div>
     <div class="row">
       <article class="feature-item col-xs-12 col-sm-4">
         <img class="feature-img" src="img/f5.jpg" alt="Feature 1">
-        <span class=feature-title>APPIFY</span>
+        <h5 class=feature-title>APPIFY</h5>
         <p class=feature-subtitle>Colorful colors</p>
       </article>
       <article class="feature-item col-xs-12 col-sm-4">
         <img class="feature-img" src="img/f4.jpg" alt="Feature 2">
-        <span class=feature-title>SUNFLOWER</span>
+        <h5 class=feature-title>SUNFLOWER</h5>
         <p class=feature-subtitle>Colorful colors</p>
       </article>
       <article class="feature-item col-xs-12 col-sm-4">
         <img class="feature-img" src="img/f6.jpg" alt="Feature 3">
-        <span class=feature-title>BOKEH</span>
+        <h5 class=feature-title>BOKEH</h5>
         <p class=feature-subtitle>Colorful colors</p>
       </article>
     </div>
