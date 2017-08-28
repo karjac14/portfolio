@@ -5,8 +5,6 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  max-width: 1024px;
-  min-width: 300px;
   margin: 0 auto;
 }
 
@@ -14,8 +12,7 @@ body {
 /*START styles for all name container*/
 
 .name-container {
-  margin-bottom: 15px;
-  width: 100%;
+  margin-bottom: 30px;
   height: 100px;
 }
 
@@ -46,15 +43,10 @@ body {
 
 .banner-container {
   width: 100%;
-  padding: 0px 15px;
-}
-
-.banner {
-  min-height: 300px;
+  min-height: 200px;
   background-image: url("../img/banner-s.jpg");
   background-size: cover;
-  padding-left: 15px;
-  margin-bottom: 8px;
+  border-radius: 0px !important; /*override bootsraps default border radius*/
 }
 
 
@@ -67,7 +59,7 @@ body {
   color: #7d97ad;
 }
 
-.feature-item{
+.feature-item {
   margin-bottom: 15px;
 }
 
@@ -105,12 +97,7 @@ body {
 
 @media only screen and (min-width: 300px) {
   .name-container h1, .name-container h4 {
-    text-align: right;
     letter-spacing: 1px;
-    font-family: 'Quicksand', sans-serif;
-  }
-  .banner h3 {
-    padding-top: 110px;
   }
 }
 
@@ -118,15 +105,14 @@ body {
 /* For tablets: */
 
 @media only screen and (min-width: 600px) {
-  .banner {
+  .jumbotron {
     background-image: url("../img/banner-m.jpg");
   }
-  .banner h3 {
-    padding-top: 110px;
+  .jumbotron h3 {
     text-align: left;
     font-size: 2.5em;
   }
-  .banner h6 {
+  .jumbotron h6 {
     text-align: left;
     font-size: 1.2em;
   }
@@ -136,17 +122,16 @@ body {
 /* For desktop: */
 
 @media only screen and (min-width: 769px) {
-  .banner {
+  .jumbotron {
     padding-left: 25px;
     background-image: url("../img/banner-l.jpg");
   }
-  .banner h3 {
-    padding-top: 100px;
+  .jumbotron h3 {
     text-align: left;
-    font-size: 2.5em;
+    font-size: 3em;
   }
-  .banner h6 {
+  .jumbotron h6 {
     text-align: left;
-    font-size: 1.5em;
+    font-size: 2em;
   }
 }
