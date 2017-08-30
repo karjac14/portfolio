@@ -66,6 +66,9 @@ body {
 .feature-item .feature-img {
   width: 100%;
   cursor: pointer;
+  max-width: 100%;
+  height: auto;
+  display:block;
 }
 
 .feature-item .feature-img:hover {
